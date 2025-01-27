@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header with Wave Effect */
+header {
+  text-align: center;
+  background-color: #10d3da; /* Light blue */
+  color: white;
+  padding: 1.5rem 0; /* Larger padding for premium feel */
+  position: relative; /* To position the wave */
+  overflow: hidden; /* To hide excess wave */
+}
+
+/* Full-width Wave Image */
+header img {
+  width: 100%; /* Full width of the banner */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0; /* Place behind the text */
+}
+
+/* Header Title */
+h1 {
+  font-size: 2.8rem; /* Slightly larger font */
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+/* Track List */
+.track-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Track Cards */
+.track {
+  background: #fff;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.track img {
+  width: 100%;
+  height: auto;
+}
+
+.track-details {
+  padding: 1rem;
+}
+
+.track-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+audio {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #15e9f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #03d7df;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #000;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 3px solid #008CBA;
+}

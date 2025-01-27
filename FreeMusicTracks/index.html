@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Music Tracks</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="images/favicon icon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>🎵 Free Music Tracks Downloader 🎶</h1>
+    <img src="images/360_F_388451241_EwDnK81imLLHNjvL2CNLucIMaZ0mcLBh-removebg-preview.png" alt="Music Logo">
+  </header>
+  <main>
+    <div class="track-list">
+      
+      <!-- Track Item 1 -->
+      <div class="track">
+        <img src="images/WhatsApp Image 2025-01-22 at 12.02.34_fc070223.jpg" alt="Album Art" style="width: 100%; max-width: 300px;">
+        <div class="track-details">
+          <h3>#1 Music Track</h3>
+          <p>Artist: 🎵FMT</p>
+          <audio controls>
+            <source src="C:\Users\Indu\Music\FreeMusicTracks\images\1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button class="download-btn" onclick="downloadTrack('https://drive.google.com/uc?export=download&id=11rhqw9OKShspmsIdCZYGaNyCCs3vCW9V')">Download</button>
+        </div>
+      </div>
+
+      <!-- Track Item 2 -->
+      <div class="track">
+        <img src="images/WhatsApp Image 2025-01-22 at 12.02.34_fc070223.jpg" alt="Album Art" style="width: 100%; max-width: 300px;">
+        <div class="track-details">
+          <h3>#2 Music Track</h3>
+          <p>Artist: 🎵FMT</p>
+          <audio controls>
+            <source src="images/2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button class="download-btn" onclick="downloadTrack('https://drive.google.com/uc?export=download&id=1gAnfTDqnq_t61LetJ0_vZZ1h91M4iZyp')">Download</button>
+        </div>
+      </div>
+
+      <!-- Track Item 3 -->
+      <div class="track">
+        <img src="images/WhatsApp Image 2025-01-22 at 12.02.34_fc070223.jpg" alt="Album Art" style="width: 100%; max-width: 300px;">
+        <div class="track-details">
+          <h3>#3 Music Track</h3>
+          <p>Artist: 🎵FMT</p>
+          <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=1Mmd63R0Sxc9b--rm-dzUtQCqTI-K5P6-" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <button class="download-btn" onclick="downloadTrack('https://drive.google.com/uc?export=download&id=1Mmd63R0Sxc9b--rm-dzUtQCqTI-K5P6-')">Download</button>
+        </div>
+      </div>
+      
+
+      <a href="" rel="nofollow"><img alt="banner" src="https://landings-cdn.adsterratech.com/referralBanners/gif/720x90_adsterra_reff.gif" /></a>
+
+      <!-- Repeat similar structure for other tracks -->
+    </div>
+  </main>
+  <footer>
+    <p>© 2025 Music World. All rights reserved.</p>
+  </footer>
+  <script>
+    // Function to trigger download
+    function downloadTrack(url) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = '';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
+</body>
+</html>
